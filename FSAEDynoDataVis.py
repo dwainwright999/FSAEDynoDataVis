@@ -7,7 +7,7 @@ style.use('fivethirtyeight')
 fig = plt.figure()
 ax1 = fig.add_subplot(1,1,1)
 
-path = 'C:\\Users\\DanHamptonWainwright\\Desktop\\data'
+path = 'C:\\Users\\DanHamptonWainwright\\Western Michigan University\\RSO, Formula Racing - Formula SAE\\2020\\Testing\\Dyno\\.CSV dump\\dynodata'
 
 def animate(i):
     graph_data = open(path,'r').read()
