@@ -12,15 +12,19 @@ path = 'C:\\Users\\DanHamptonWainwright\\Western Michigan University\\RSO, Formu
 def animate(i):
     graph_data = open(path,'r').read()
     lines = graph_data.split('\n')
-    xs = []
-    ys = []
+    x = []
+    y1 = []
+    y2 = []
+
     for line in lines:
         if len(line) > 1:
-            x, y = line.split(',')
-            xs.append(float(x))
-            ys.append(float(y))
+            a, b, c = line.split(',')
+            x.append(float(a))
+            y1.append(float(b))
+            y2.append(float(c))
     ax1.clear()
-    ax1.plot(xs, ys)
+    ax1.plot(x, y1)
+    ax1.plot(x, y2)
 
-ani = animation.FuncAnimation(fig, animate, interval=20)
+ani = animation.FuncAnimation(fig, animate, interval=250)
 plt.show()
