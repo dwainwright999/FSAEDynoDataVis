@@ -10,7 +10,7 @@ port  = 'COM6'
 path = 'C:\\Users\\DanHamptonWainwright\\Western Michigan University\\RSO, Formula Racing - Formula SAE\\2020\\Testing\\Dyno\\.CSV dump\\dynodata'
 
 
-ser = serial.Serial(port, 921600, )
+ser = serial.Serial(port, 921600)
 
 style.use('fivethirtyeight')
 
